@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+$teko :'Teko',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: $teko;
+
+}
+
+.appContainer {
+    background-color: rgba(9, 27, 42, 255);
+    height: 100vh;
+    width: 100vw;
+
+    .app {
+        padding: 40px 150px 80px 150px;
+
+        .navbarContainer {
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-between;
+                font-size: 40px;
+            }
+
+            li {
+                ul li {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+
+    .homeContainer {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 70vw;
+
+        .left {
+            display: flex;
+            height: 75vh;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 700px;
+        }
+
+        .line1 {
+            font-size: 100px;
+        }
+
+        .line2 {
+            font-size: 50px;
+            color: #0ba7f0;
+        }
+
+        .buttons {
+            padding: 20px 0;
+
+            button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: #00233e;
+                background-color: #0ba7f0;
+                font-size: 20px;
+
+
+            }
+
+            button:hover {
+                border: .5px solid white;
+                background-color: #00233e;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .right {
+            padding: 20px 20px 0 0;
+            max-height: 500px;
+            overflow: hidden;
+
+            img {
+                border: none;
+                border-radius: 5px;
+            }
+        }
+
+
+
+    }
+
+    .projectContainer {
+        padding: 20px 0;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .cardContainer {
+            width: 400px;
+            height: 300px;
+            background-color: #0ba7f0;
+            border: none;
+            border-radius: 20px;
+            object-fit: contain;
+            margin: 50px;
+            cursor: pointer;
+            transition: 0.15s;
+            
+            .top {
+                img {
+                    width: 400px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+
+                .title{
+                    color: #00233e;
+                    padding: 10px 5px;
+                    font-size: 30px;
+
+                }
+            }
+
+        }
+        .cardContainer:hover{
+            transform: scale(1.02);
+          }
+
+
+    }
+    .skillsContainer{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .part{
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #0ba7f0;
+            position: relative;
+            border-radius: 10px;
+            margin: 50px 0;
+
+            h1{
+                position: relative;
+                bottom: 40px;
+            }
+            .skills{
+                // padding: 10px ;
+            }
+        }
+    }
+
+
+}
