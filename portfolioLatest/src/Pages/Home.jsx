@@ -12,9 +12,8 @@ export default function Home () {
           <div className='line1'> Hi, I am Abhi Soni </div>
           <div className='line2'>A MERN Stack Developer</div>
           <div className='intro'>
-            I am a MERN Stack Developer and I am activily looking for
-            opporrtunities in the field of Software Development
-          </div>
+            I'm a proficient MERN stack developer, and I'm currently seeking opportunities as a Software Development Engineer. Explore my portfolio to see
+            my projects and feel free to get in touch. Let's turn digital dreams into reality.</div>
           <div className='buttons'>
             <button
               onClick={() => {

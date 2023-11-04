@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const FORM_ENDPOINT =
   'https://public.herotofu.com/v1/af927210-7adf-11ee-b9fd-a16a30a6940d' // TODO - update to the correct endpoint
@@ -9,7 +9,8 @@ const ContactForm = () => {
     e.preventDefault()
 
     const inputs = e.target.elements
-    const data = {}
+      const data = {}
+      
 
     for (let i = 0; i < inputs.length; i++) {
       if (inputs[i].name) {
@@ -47,7 +48,11 @@ const ContactForm = () => {
       <div div className='contactContainer font'>
         <h2>Thank you soo much!</h2>
             <div>We'll be in touch soon.</div>
-            <button>Send Another</button>
+            <button onClick={() => {
+                setSubmitted(false)
+                useEffect(() => {
+                  },[submitted])
+            }}>Send Another</button>
       </div>
     )
   }
