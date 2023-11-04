@@ -1,21 +1,25 @@
-import Navbar from './Components/Navbar'
-import './Style.scss'
+import React from 'react'
+import Navbar from './Components/Navbar.jsx'
 import Home from './Pages/Home'
 import Projects from './Pages/Projects'
 import Skills from './Pages/Skills'
+import ContactMe from './Pages/ContactMe'
+import { Route, Routes } from 'react-router-dom'
 
-function App () {
+export default function App () {
   return (
     <div className='appContainer'>
-      <div className="app">
+      <div className='app'>
         <Navbar />
-        {/* <Home /> */}
-        {/* <Projects /> */}
-        <Skills />
-
+        <div>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contact' element={<ContactMe />} />
+          </Routes>
+        </div>
       </div>
     </div>
   )
 }
-
-export default App
