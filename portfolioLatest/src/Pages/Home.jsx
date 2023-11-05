@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from '../assets/Img.jpg'
 import { useNavigate } from 'react-router-dom'
-import { FaGithubSquare, FaLinkedin, FaInstagram} from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import profile from '../assets/profile.png'
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 
 export default function Home () {
   const navigate = useNavigate()
