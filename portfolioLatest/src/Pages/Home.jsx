@@ -1,9 +1,8 @@
 import React from 'react'
-import Image from '../assets/Img.jpg'
+import non from '../assets/non.png'
 import { useNavigate } from 'react-router-dom'
 import { FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import profile from '../assets/profile.png'
-// import { CSSTransition, TransitionGroup } from 'react-transition-group';
+// import profile from '../assets/profile.jpg'
 
 
 export default function Home () {
@@ -33,7 +32,7 @@ export default function Home () {
           </div>
         </div>
         <div className='right'>
-          <img src={Image} alt='' />
+          <img src={non} alt='' />
         </div>
       </div>
     </>
