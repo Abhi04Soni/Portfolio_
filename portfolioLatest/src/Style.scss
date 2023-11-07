@@ -13,19 +13,19 @@ sans-serif;
 
 .appContainer {
     background-color: rgba(9, 27, 42, 255);
-    height: 100%;
-    width: 100%;
+    
+
 
     .app {
-        padding: 40px 150px 80px 150px;
-
+        // height: 100%;
+        // padding: 40px 150px 80px 150px;
         .navbarContainer {
             ul {
                 display: flex;
                 flex-direction: row;
                 list-style: none;
-                justify-content: space-between;
-                font-size: 40px;
+                // justify-content: space-between;
+                // font-size: 40px;
             }
 
             li {
@@ -34,7 +34,7 @@ sans-serif;
                 }
 
                 ul li {
-                    padding-left: 25px;
+                    // padding-left: 25px;
 
                     a {
                         text-decoration: none;
@@ -45,30 +45,20 @@ sans-serif;
     }
 
     .homeContainer {
-        display: flex;
-        // align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        width: 70vw;
         animation: fadein 2s;
+        // height: 100%;
+
         .left {
             display: flex;
-            height: 75vh;
             flex-direction: column;
             justify-content: center;
-            max-width: 700px;
-        }
-
-        .line1 {
-            font-size: 100px;
         }
 
         .line2 {
-            font-size: 50px;
             color: #0ba7f0;
         }
-        .intro{
-            max-width: 600px;
+
+        .intro {
             font-size: 20px;
         }
 
@@ -106,35 +96,20 @@ sans-serif;
         }
 
         .right {
-            padding: 20px 20px 0 0;
-            max-height: 500px;
-            overflow: hidden;
-            height: 500px;
-            width: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
 
             img {
                 border: none;
-                border-radius: 5px;
+                border-radius: 50%;
             }
         }
-
-
-
     }
 
     .projectContainer {
-
         padding: 20px 0;
         animation: fadein 2s;
-
-        .projects {
-            margin-left: 60px;
-            display: grid;
-            grid-template-columns: auto auto;
-        }
 
         h1 {
             font-size: 50px;
@@ -145,8 +120,8 @@ sans-serif;
         }
 
         .cardContainer {
-            width: 400px;
-            height: 300px;
+            // width: 400px;
+            // height: 300px;
             background-color: #0ba7f0;
             border: none;
             border-radius: 20px;
@@ -157,9 +132,9 @@ sans-serif;
 
             .top {
                 img {
-                    width: 400px;
-                    height: 200px;
-                    object-fit: fill;
+                    width: 100%;
+                    height: 90%;
+                    object-fit: contain;
                     border-radius: 15px 15px 0 0;
                 }
             }
@@ -176,7 +151,13 @@ sans-serif;
                     // padding: 10px 5px;
                     font-size: 30px;
                     text-decoration: none;
-
+                }
+                .desc{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    // padding-left: 5px;
                 }
             }
 
@@ -218,9 +199,7 @@ sans-serif;
             }
 
             .skills {
-                display: flex;
-                justify-content: space-evenly;
-                width: 700px;
+                // width: 700px;
                 padding-bottom: 20px;
 
                 .cont {
@@ -233,9 +212,9 @@ sans-serif;
                         color: #0ba7f0;
                     }
 
-                }   
+                }
 
-            }   
+            }
 
 
 
@@ -244,7 +223,7 @@ sans-serif;
 
     .contactContainer {
         display: flex;
-        width: 75vw;
+        // width: 75vw;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -259,17 +238,17 @@ sans-serif;
             justify-content: center;
             align-items: center;
 
-            label {
-                font-size: 45px;
-                padding: 20px;
-            }
+            // label {
+            //     font-size: 45px;
+            //     padding: 10px;
+            // }
 
             input {
                 color: #00233e;
-                padding: 10px;
-                margin: 10px 10px;
-                width: 500px;
-                font-size: 20px;
+                // padding: 10px;
+                // margin: 10px 10px;
+                // width: 500px;
+                // font-size: 20px;
                 border: none;
                 border-radius: 5px;
             }
@@ -279,9 +258,9 @@ sans-serif;
             }
 
             .textInput {
-                height: 200px;
-                width: 500px;
-                font-size: 20px;
+                // height: 200px;
+                // width: 500px;
+                // font-size: 20px;
                 color: #00233e;
                 margin: 30px;
                 border: none;
@@ -354,17 +333,408 @@ sans-serif;
 
     .icon:hover {
         transform: scale(1.15);
-    }  
+    }
 }
+
 @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  @keyframes fadein {
-    from { opacity: 0}
-    to   { opacity: 1}
-  }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .app {
+        padding: 40px 100px 80px 100px;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 40px;
+            justify-content: space-between;
+
+            ul li {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: grid;
+        grid-template-columns: auto 30vw;
+        height: 90vh;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto;
+        // .projects {
+        margin-left: 60px;
+        // }
+    }
+
+    .cardContainer {
+        width: 400px;
+        height: 300px;
+
+
+    }
+
+    .skills {
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .left {
+        .line1 {
+            font-size: 90px;
+        }
+
+        .line2 {
+            font-size: 70px;
+        }
+
+        .intro {
+            max-width: 50vw;
+        }
+    }
+
+    .right {
+        img {
+            height: 500px;
+        }
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 500px;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 500px;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .app {
+        padding: 40px 80px 80px 80px;
+        // width: 10vw;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 40px;
+            justify-content: space-between;
+
+            ul li {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: grid;
+        grid-template-columns: auto 35vw;
+        height: 90vh;
+        // height: 100%;
+        // width: 100%;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        // .projects {
+        // margin-left: 60px;
+
+        // }
+    }
+
+    .cardContainer {
+        width: 300px;
+        height: 250px;
+
+        .title {
+            font-size: 30px;
+
+        }
+
+        .desc {
+            font-size: 15px;
+
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+
+    .left {
+        .line1 {
+            // padding-top: 200px;
+            font-size: 60px;
+        }
+
+        .line2 {
+            font-size: 50px;
+        }
+
+        .intro {
+            max-width: 50vw;
+        }
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 500px;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 500px;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+    .right {
+        img {
+            height: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .app {
+        padding: 40px 50px 80px 50px;
+
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 30px;
+            justify-content: flex-start;
+
+            ul li {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 90vw;
+    }
+
+    .cardContainer {
+        width: 350px;
+        height: 250px;
+
+        .title {
+            font-size: 25px;
+
+        }
+
+        .desc {
+            font-size: 15px;
+
+        }
+    }
+
+    .skills {
+        display: grid;
+        // justify-content: space-evenly;
+        // flex-direction: row;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 70vw;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 70vw;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+
+    .left {
+        .line1 {
+            font-size: 80px;
+        }
+
+        .line2 {
+            font-size: 50px;
+        }
+
+        .intro {
+            max-width: 80vw;
+        }
+    }
+
+    .right {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        img {
+            width: 60vw;
+            height: 60vw;
+
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app {
+        padding: 40px 40px 120px 40px;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 25px;
+            justify-content: flex-start;
+
+            ul li {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .cardContainer {
+        width: 90vw;
+        height: 250px;
+
+        .title {
+            font-size: 22px;
+
+        }
+        .desc {
+            font-size: 12px;
+
+        }
+    }
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .left {
+        .line1 {
+            font-size: 50px;
+        }
+
+        .line2 {
+            font-size: 30px;
+        }
+
+        .intro {
+            max-width: 70vw;
+        }
+    }
+
+    .right {
+        img {
+            height: 60vw;
+            width: 60vw;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    app {
+        padding: 40px 20px 120px 20px;
+        justify-content: flex-start;
+
+
+    }
+
+    .right {
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .navbarContainer {
+        ul {
+            font-size: 20px;
+
+            ul li {
+                padding-left: 10px;
+            }
+        }
+        
+    }
+
+}
