@@ -648,7 +648,7 @@ sans-serif;
 
 @media screen and (max-width: 480px) {
     .app {
-        padding: 40px 40px 120px 40px;
+        padding: 30px 30px 120px 30px;
     }
 
     .navbarContainer {
@@ -669,8 +669,8 @@ sans-serif;
     }
 
     .cardContainer {
-        width: 90vw;
-        height: 250px;
+        width: 280px;
+        height: 200px;
 
         .title {
             font-size: 22px;
@@ -687,7 +687,7 @@ sans-serif;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90vw;
+        // width: 90vw;
     }
 
     .left {
@@ -714,7 +714,7 @@ sans-serif;
 
 @media screen and (max-width: 300px) {
     app {
-        padding: 40px 20px 120px 20px;
+        padding: 20px 20px 120px 20px;
         justify-content: flex-start;
 
 
@@ -735,6 +735,26 @@ sans-serif;
             }
         }
         
+    }
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 90vw;
+    }
+    .cardContainer {
+        width: 200px;
+        height: 180px;
+
+        .title {
+            font-size: 22px;
+
+        }
+        .desc {
+            font-size: 12px;
+
+        }
     }
 
 }
