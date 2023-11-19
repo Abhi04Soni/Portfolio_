@@ -13,6 +13,7 @@ sans-serif;
 
 .appContainer {
     background-color: rgba(9, 27, 42, 255);
+    width: 100%;
     
 
 
@@ -108,8 +109,10 @@ sans-serif;
     }
 
     .projectContainer {
-        padding: 20px 0;
+        padding: 20px 10px 20px 0;
         animation: fadein 2s;
+        // width: 100%;
+        // margin-left: 10px;
 
         h1 {
             font-size: 50px;
@@ -382,7 +385,7 @@ sans-serif;
         display: grid;
         grid-template-columns: auto auto;
         // .projects {
-        margin-left: 60px;
+        // margin-left: 60px;
         // }
     }
 
@@ -566,7 +569,7 @@ sans-serif;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80vw;
+        // width: 80vw;
     }
     .projectContainer {
         display: flex;
@@ -648,7 +651,7 @@ sans-serif;
 
 @media screen and (max-width: 480px) {
     .app {
-        padding: 30px 30px 120px 30px;
+        padding: 30px 0px 100px 20px;
     }
 
     .navbarContainer {
@@ -657,7 +660,7 @@ sans-serif;
             justify-content: flex-start;
 
             ul li {
-                padding-left: 15px;
+                padding-left: 10px;
             }
         }
     }
@@ -669,25 +672,33 @@ sans-serif;
     }
 
     .cardContainer {
-        width: 280px;
-        height: 200px;
+        width: 200px;
+        height: 220px;
 
         .title {
             font-size: 22px;
 
         }
         .desc {
-            font-size: 12px;
+            max-width:180px ;
+            font-size: 14px;
+            // padding: 5px;
+            margin-left: 10px;
+            // margin-right: 10px;
 
         }
     }
 
     .projectContainer {
+        h1{
+            font-size: 10px;
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // width: 90vw;
+        // width: 100%;
+        // width: 70vw;
     }
 
     .left {
@@ -714,8 +725,9 @@ sans-serif;
 
 @media screen and (max-width: 300px) {
     app {
-        padding: 20px 20px 120px 20px;
-        justify-content: flex-start;
+        padding: 20px 20px 100px 20px;
+        // justify-content: flex-start;
+        // scrollbar: none;
 
 
     }
@@ -737,6 +749,9 @@ sans-serif;
         
     }
     .projectContainer {
+        h1{
+            font-size: 10px;
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -744,15 +759,17 @@ sans-serif;
         // width: 90vw;
     }
     .cardContainer {
-        width: 200px;
-        height: 180px;
+        width: 60vw;
+        // height: 200px;
 
         .title {
-            font-size: 22px;
+            font-size: 12px;
+            max-width: 55vw;
 
         }
         .desc {
             font-size: 12px;
+            max-width: 150px;
 
         }
     }
