@@ -32,7 +32,7 @@ export default function Home () {
           </div>
         </div>
         <div className='right'>
-          <img src={non} alt='' />
+          <img src={non} alt='Profile Image' />
         </div>
       </div>
     </>

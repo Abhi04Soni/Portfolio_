@@ -53,6 +53,7 @@ sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            // align-items: center;
         }
 
         .line2 {
@@ -622,6 +623,12 @@ sans-serif;
 
 
     .left {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
         .line1 {
             font-size: 80px;
         }
@@ -669,7 +676,15 @@ sans-serif;
         display: flex;
         flex-direction: column-reverse;
         height: 100%;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
 
     .cardContainer {
         width: 200px;
@@ -737,6 +752,12 @@ sans-serif;
             height: 200px;
             width: 200px;
         }
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .navbarContainer {
         ul {
